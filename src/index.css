@@ -21,6 +21,10 @@ body h1 {
   gap: 2rem;
 }
 
+#scores-container {
+  border: 1px solid #000;
+}
+
 /* Input styles */
 input {
   background-color: rgb(255, 255, 255);
@@ -41,6 +45,6 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   height: 2rem;
 }
