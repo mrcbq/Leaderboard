@@ -7,8 +7,18 @@
 /* Body styles */
 body h1 {
   padding: 3rem;
-  text-align: center;
   font-family: 'Open Sans', 'Lucida Grande', tahoma, verdana, arial, sans-serif;
+}
+
+.view-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.recent-scores {
+  display: flex;
+  gap: 2rem;
 }
 
 /* Input styles */
@@ -16,12 +26,11 @@ input {
   background-color: rgb(255, 255, 255);
   height: 2rem;
   margin: 0.1rem;
-  border: none;
+  border: 1px solid #000000f9;
 }
 
 /* Button styles */
 button {
-  width: 1.5rem;
   height: 1.5rem;
 }
 
@@ -29,13 +38,9 @@ button {
 form,
 li {
   padding: 0.3rem;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #e7dfe7f9;
   height: 2rem;
-}
-
-.view-container {
-  display: flex;
 }
