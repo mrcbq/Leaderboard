@@ -36,19 +36,19 @@ submitButton.addEventListener('click', async (event) => {
   };
 
   try {
-    const response = await fetch(gameDataUrl, {
+    await fetch(gameDataUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(formData),
     });
-    const responseData = await response.json();
-    console.log(responseData);
+    // const responseData = await response.json();
+    // console.log(responseData);
     showMessage('Data sent successfully');
   } catch (error) {
     showMessage('Error sending data', true);
-    console.error(error);
+    // console.error(error);
   }
 });
 
