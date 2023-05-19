@@ -25,6 +25,11 @@ inputScore.addEventListener('input', (event) => {
 submitButton.addEventListener('click', async (event) => {
   event.preventDefault();
 
+  if (inputName.value.trim() === '' || inputScore.value.trim() === '') {
+    showMessage('Por favor, complete todos los campos antes de enviar', true);
+    return;
+  }
+
   const formData = {
     user: inputName.value,
     score: parseInt(inputScore.value, 10),
