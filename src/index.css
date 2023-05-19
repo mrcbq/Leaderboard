@@ -101,14 +101,15 @@ article::before {
   bottom: 0;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(
-    to bottom,
-    transparent 10%,
-    rgba(0, 0, 0, 0.5) 50%,
-    rgba(0, 0, 0) 95%
-  );
+  background-image:
+    linear-gradient(
+      to bottom,
+      transparent 10%,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0) 95%
+    );
   opacity: 0;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 article:hover::before {
