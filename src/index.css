@@ -8,9 +8,17 @@
 body {
   padding: 3rem;
   font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Ninja Naruto', sans-serif;
   gap: 2rem;
   background-color: #3f4345;
   color: #fff;
+}
+
+h1 {
+  display: flex;
+  padding-bottom: 7rem;
+  padding-left: 5rem;
+  justify-content: center;
 }
 
 .view-container {
@@ -63,7 +71,8 @@ li {
 }
 
 article {
-  position: relative;
+  position: fixed;
+  bottom: 0;
   width: 250px;
   transition: all 0.3s ease;
 }
