@@ -48,7 +48,6 @@ submitButton.addEventListener('click', async (event) => {
     showMessage('Data sent successfully');
   } catch (error) {
     showMessage('Error sending data', true);
-    // console.error(error);
   }
 });
 
