@@ -5,9 +5,12 @@
 }
 
 /* Body styles */
-body h1 {
+body {
   padding: 3rem;
-  font-family: 'Open Sans', 'Lucida Grande', tahoma, verdana, arial, sans-serif;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  gap: 2rem;
+  background-color: #3f4345;
+  color: #fff;
 }
 
 .view-container {
@@ -22,13 +25,18 @@ body h1 {
 }
 
 #scores-container {
-  border: 1px solid #000;
+  border: 1px solid #baae9c;
 }
 
 .form-container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 5rem;
+}
+
+form {
+  align-items: flex-end;
+  gap: 1rem;
 }
 
 /* Input styles */
@@ -51,6 +59,5 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
   height: 2rem;
 }
