@@ -18,7 +18,7 @@ inputScore.addEventListener('input', (event) => {
   const inputValue = event.target.value;
   if (/\D/.test(inputValue)) {
     event.target.value = inputValue.replace(/\D/g, '');
-    showMessage('Please enter only numbers in the score field', true);
+    showMessage('Only numbers in score', true);
   }
 });
 
@@ -26,7 +26,7 @@ submitButton.addEventListener('click', async (event) => {
   event.preventDefault();
 
   if (inputName.value.trim() === '' || inputScore.value.trim() === '') {
-    showMessage('Please complete all fields before submitting', true);
+    showMessage('Complete all fields!!!', true);
     return;
   }
 
@@ -65,7 +65,7 @@ getScoresButton.addEventListener('click', async () => {
       const li = document.createElement('li');
       li.textContent = `${scoreData.user}: ${scoreData.score}`;
       scoresContainer.appendChild(li);
-      showMessage('Scores uploaded successfully');
+      showMessage('Scores uploaded!!!');
     });
   } catch (error) {
     showMessage('Error loading scores', true);

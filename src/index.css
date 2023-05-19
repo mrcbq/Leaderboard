@@ -25,6 +25,12 @@ body h1 {
   border: 1px solid #000;
 }
 
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 /* Input styles */
 input {
   background-color: rgb(255, 255, 255);
