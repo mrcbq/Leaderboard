@@ -75,7 +75,7 @@ JavaScript project for the Leaderboard list app, using webpack and ES6 features,
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://mrcbq.github.io/leaderboard/)
+- [Live Demo Link](https://mrcbq.github.io/Leaderboard/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -95,7 +95,7 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-https://github.com/mrcbq/leaderboard.git
+https://github.com/mrcbq/Leaderboard.git
 
 ### Install
 
@@ -109,7 +109,7 @@ npm install
 
 To run the project, execute the following command:
 
-git clone https://github.com/mrcbq/leaderboard.git
+git clone https://github.com/mrcbq/Leaderboard.git
 
 ### Run tests
 
