@@ -43,8 +43,8 @@ submitButton.addEventListener('click', async (event) => {
       },
       body: JSON.stringify(formData),
     });
-    // const responseData = await response.json();
-    // console.log(responseData);
+    inputName.value = '';
+    inputScore.value = '';
     showMessage('Data sent successfully');
   } catch (error) {
     showMessage('Error sending data', true);
