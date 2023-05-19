@@ -8,11 +8,11 @@ const inputScore = document.getElementById('input-score');
 const submitButton = document.getElementById('submit-button');
 const getScoresButton = document.getElementById('get-scores');
 
-function showMessage(message, isError = false) {
+const showMessage = (message, isError = false) => {
   const messageElement = document.getElementById('message');
   messageElement.textContent = message;
   messageElement.style.color = isError ? 'red' : 'green';
-}
+};
 
 inputScore.addEventListener('input', (event) => {
   const inputValue = event.target.value;
