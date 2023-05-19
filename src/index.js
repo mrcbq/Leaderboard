@@ -62,7 +62,7 @@ getScoresButton.addEventListener('click', async () => {
     const scoresArray = Object.values(responseData.result);
     scoresArray.forEach((scoreData) => {
       const li = document.createElement('li');
-      li.textContent = `${scoreData.user}:-----: ${scoreData.score}`;
+      li.textContent = `${scoreData.user}: ${scoreData.score}`;
       scoresContainer.appendChild(li);
       showMessage('Scores uploaded!!!');
     });
