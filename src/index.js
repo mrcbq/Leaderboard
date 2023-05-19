@@ -8,6 +8,20 @@ const inputScore = document.getElementById('input-score');
 const submitButton = document.getElementById('submit-button');
 const getScoresButton = document.getElementById('get-scores');
 
+function showMessage(message, isError = false) {
+  const messageElement = document.getElementById('message');
+  messageElement.textContent = message;
+  messageElement.style.color = isError ? 'red' : 'green';
+}
+
+inputScore.addEventListener('input', (event) => {
+  const inputValue = event.target.value;
+  if (/\D/.test(inputValue)) {
+    event.target.value = inputValue.replace(/\D/g, '');
+    showMessage('Por favor, ingrese solo números en el campo de puntuación', true);
+  }
+});
+
 submitButton.addEventListener('click', async (event) => {
   event.preventDefault();
 
@@ -26,7 +40,9 @@ submitButton.addEventListener('click', async (event) => {
     });
     const responseData = await response.json();
     console.log(responseData);
+    showMessage('Datos enviados con éxito');
   } catch (error) {
+    showMessage('Error al enviar datos', true);
     console.error(error);
   }
 });
@@ -44,8 +60,9 @@ getScoresButton.addEventListener('click', async () => {
       const li = document.createElement('li');
       li.textContent = `${scoreData.user}: ${scoreData.score}`;
       scoresContainer.appendChild(li);
+      showMessage('Puntuaciones cargadas con éxito');
     });
   } catch (error) {
-    console.error(error);
+    showMessage('Error al cargar las puntuaciones', true);
   }
 });
